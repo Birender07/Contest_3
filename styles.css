@@ -1,0 +1,127 @@
+/* NAVBAR  */
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    padding-left: 10vw;
+}
+
+.sbmtbtn {
+    margin-right: 10vw;
+}
+
+/* flex */
+
+.cntnr {
+    display: flex;
+    gap: 6vw;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.crd {
+    width: 300px;
+    height: 200px;
+}
+
+.crd img {
+    width: 300px;
+    height: 200px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* Grid */
+
+.cntnr2 {
+    display: grid;
+    grid-gap: 20px;
+    height: 150vh;
+    justify-content: center;
+    grid-template-columns: repeat(6, 13%);
+    grid-template-rows: repeat(4, 23%);
+    margin-top: 55px;
+}
+
+.cntnr2 div {
+    background-color: aqua;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item4 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.item7 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.item8 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.item9 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+/* CARDS */
+
+.crd2 {
+    display: flex;
+    margin-top: 3vh;
+    ;
+    gap: 3vw;
+    justify-content: center;
+}
+
+@media (width<=576px) {
+    .crd2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* footer */
+
+.feet {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 9vh;
+}
+
+@media (width<=576px) {
+    .feet {
+        flex-direction: column;
+    }
+}
+
+.feet>div {
+    margin-top: 3vh;
+}
+
+.end {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
